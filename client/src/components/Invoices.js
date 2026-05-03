@@ -26,7 +26,7 @@ const Invoices = () => {
   const [sortBy, setSortBy] = useState('issueDate');
   const [sortOrder, setSortOrder] = useState('desc');
 
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+  const API_URL = process.env.REACT_APP_API_URL || 'https://fcms-pzhn.onrender.com';
 
   useEffect(() => {
     fetchData();
