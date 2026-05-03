@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { API_URL as API_BASE_URL } from "../config";
 
 const AutomationPanel = ({ onClientCreated }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
-  const API_URL = process.env.REACT_APP_API_URL + "/api/automation";
+  const API_URL = `${API_BASE_URL}/api/automation`;
+  const WEBHOOK_URL = `${API_BASE_URL}/api/webhook/client`;
 
   const [formData, setFormData] = useState({
     emailContent: ""
@@ -180,14 +182,14 @@ const AutomationPanel = ({ onClientCreated }) => {
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Webhook URL</span>
                   <button 
-                    onClick={() => navigator.clipboard?.writeText(`${process.env.REACT_APP_API_URL}/api/webhook/client`)}
+                    onClick={() => navigator.clipboard?.writeText(WEBHOOK_URL)}
                     className="text-xs bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-2 py-1 rounded-lg transition-colors duration-200"
                   >
                     Copy
                   </button>
                 </div>
                 <code className="text-sm text-gray-800 break-all bg-gray-50 p-3 rounded-lg block font-mono">
-                  {process.env.REACT_APP_API_URL}/api/webhook/client
+                  {WEBHOOK_URL}
                 </code>
               </div>
               

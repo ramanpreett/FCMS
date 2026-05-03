@@ -1,11 +1,11 @@
 // Config Object
 const config = {
   development: {
-    API_URL: `{process.env.REACT_APP_API_URL}`,
+    API_URL: 'http://localhost:5000',
     ENV: 'development'
   },
   production: {
-    API_URL: 'https://fcms-pzhn.onrender.com',
+    API_URL: 'https://fcms-pzhn.onrender.com/api/users',
     ENV: 'production'
   }
 };
@@ -28,7 +28,9 @@ const currentEnv = getEnvironment();
 const currentConfig = config[currentEnv];
 
 // Use env variable if available, otherwise use auto-detected config
-export const API_URL = process.env.REACT_APP_API_URL || currentConfig.API_URL;
+const resolvedApiUrl = (process.env.REACT_APP_API_URL || currentConfig.API_URL || '').replace(/\/+$/, '');
+
+export const API_URL = resolvedApiUrl;
 export const ENV = process.env.REACT_APP_ENV || currentConfig.ENV;
 
 // Debug logging

@@ -3,8 +3,9 @@ import axios from "axios";
 import ClientForm from "./ClientForm";
 import ClientList from "./ClientList";
 import AutomationPanel from "./AutomationPanel";
+import { API_URL as API_BASE_URL } from "../config";
 
-const API_URL = process.env.REACT_APP_API_URL + "/api/clients";
+const API_URL = `${API_BASE_URL}/api/clients`;
 
 const Clients = () => {
   const [clients, setClients] = useState([]);

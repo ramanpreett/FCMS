@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { API_URL } from "../config";
 import ProjectList from "./projects/ProjectList";
 import ProjectDetails from "./projects/ProjectDetails";
 import ProjectKanban from "./projects/ProjectKanban";
@@ -20,8 +21,6 @@ const Projects = () => {
     client: 'all'
   });
   const [sortBy, setSortBy] = useState('deadline');
-
-  const API_URL = process.env.REACT_APP_API_URL || 'https://fcms-pzhn.onrender.com';
 
   useEffect(() => {
     fetchData();

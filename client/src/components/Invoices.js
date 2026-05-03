@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { API_URL } from "../config";
 import InvoiceList from "./invoices/InvoiceList";
 import InvoiceForm from "./invoices/InvoiceForm";
 import InvoiceDetails from "./invoices/InvoiceDetails";
@@ -25,8 +26,6 @@ const Invoices = () => {
   });
   const [sortBy, setSortBy] = useState('issueDate');
   const [sortOrder, setSortOrder] = useState('desc');
-
-  const API_URL = process.env.REACT_APP_API_URL || 'https://fcms-pzhn.onrender.com';
 
   useEffect(() => {
     fetchData();

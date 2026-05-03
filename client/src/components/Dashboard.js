@@ -37,7 +37,7 @@ const Dashboard = ({ onPageChange }) => {
   const [error, setError] = useState("");
   const [lastUpdated, setLastUpdated] = useState(null);
 
-  const baseUrl = API_URL || process.env.REACT_APP_API_URL || 'https://fcms-pzhn.onrender.com';
+  const baseUrl = API_URL;
 
   useEffect(() => {
     fetchDashboardData();
