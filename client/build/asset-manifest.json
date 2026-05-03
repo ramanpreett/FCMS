@@ -1,19 +1,13 @@
 {
   "files": {
-    "main.css": "/freelance-client-management-system/static/css/main.b76bb8b0.css",
-    "main.js": "/freelance-client-management-system/static/js/main.534fec43.js",
-    "static/js/239.71c8834c.chunk.js": "/freelance-client-management-system/static/js/239.71c8834c.chunk.js",
-    "static/js/977.eef93592.chunk.js": "/freelance-client-management-system/static/js/977.eef93592.chunk.js",
-    "static/js/455.a0429d23.chunk.js": "/freelance-client-management-system/static/js/455.a0429d23.chunk.js",
-    "index.html": "/freelance-client-management-system/index.html",
-    "main.b76bb8b0.css.map": "/freelance-client-management-system/static/css/main.b76bb8b0.css.map",
-    "main.534fec43.js.map": "/freelance-client-management-system/static/js/main.534fec43.js.map",
-    "239.71c8834c.chunk.js.map": "/freelance-client-management-system/static/js/239.71c8834c.chunk.js.map",
-    "977.eef93592.chunk.js.map": "/freelance-client-management-system/static/js/977.eef93592.chunk.js.map",
-    "455.a0429d23.chunk.js.map": "/freelance-client-management-system/static/js/455.a0429d23.chunk.js.map"
+    "main.css": "/fcms/static/css/main.ec7236c6.css",
+    "main.js": "/fcms/static/js/main.a4644b92.js",
+    "index.html": "/fcms/index.html",
+    "main.ec7236c6.css.map": "/fcms/static/css/main.ec7236c6.css.map",
+    "main.a4644b92.js.map": "/fcms/static/js/main.a4644b92.js.map"
   },
   "entrypoints": [
-    "static/css/main.b76bb8b0.css",
-    "static/js/main.534fec43.js"
+    "static/css/main.ec7236c6.css",
+    "static/js/main.a4644b92.js"
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ramanpreett.github.io/freelance-client-management-system",
+  "homepage": "https://ramanpreett.github.io/fcms",
   "name": "clientpulse-client",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,6 @@
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "cross-env": "^7.0.3",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.3.0"
   },
@@ -26,9 +25,8 @@
     "build:dev": "cross-env REACT_APP_ENV=development react-scripts build",
     "build:prod": "cross-env REACT_APP_ENV=production react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build:prod",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
+    
   },
   "browserslist": {
     "production": [
