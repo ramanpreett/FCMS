@@ -14,7 +14,7 @@ import dotenv from 'dotenv';
 dotenv.config(); 
 const app = express();
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001", "https://ramanpreett.github.io"],
+  origin: ["http://localhost:3000", "http://localhost:3001", "https://ramanpreett.github.io", "https://fcms-two.vercel.app"],
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
